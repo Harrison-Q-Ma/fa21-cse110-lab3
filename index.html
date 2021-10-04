@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
         <title>Meeting Minutes</title>
+        <link rel="icon" href="favicon-32x32.png"> 
     </head>
     <body>
-        <h1>CSE 110 Project Development Team Meeting #2</h1>
-        <h2>Team logistics, role assignments, brainstorming of project idea </h2>
-        <h3>2 October 2021</h3>
-        
+    <main>
+        <header>
+            <h1>CSE 110 Project Development Team Meeting #2</h1>
+            <h2>Team logistics, role assignments, brainstorming of project idea </h2>
+            <h3>2 October 2021</h3>
+        </header>
         <hr />
-        <h3>Attendance</h3>
-        Attending: 
-        <ul>
-            <li>Harrison Ma</li>
-            <li>James Smith</li>
-            <li>Robert Johnson</li>
-            <li>Mary Williams</li>
-            <li>Patricia Brown</li>
-        </ul>
-        Absent:
-        <ul>
-            <li>John Jones</li>
-            <li>Jennifer Garcia</li>
-        </ul>
+        <nav>
+            <a href="#ATTENDANCE">Attendance</a> |
+            <a href="#AGENDA">Agenda</a> |
+            <a href="#VIDEORECORDING">Video Recording</a> |
+            <a href="#AUDIORECORDING">Audio Recording</a>
+        </nav>
+        <hr />
+        <h3><a id="ATTENDANCE">Attendance</a></h3>
+        <details>
+            <summary>Attending:</summary>
+            <ul>
+                <li>Harrison Ma</li>
+                <li>James Smith</li>
+                <li>Robert Johnson</li>
+                <li>Mary Williams</li>
+                <li>Patricia Brown</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Absent:</summary>
+            <ul>
+                <li>John Jones</li>
+                <li>Jennifer Garcia</li>
+            </ul>
+        </details>
         <hr />
         <ol class="thing1">
             <li>
-                <h3>CALL TO ORDER</h3>
-                <ul>
-                    <li>Call to Order &emsp; Date: 02/10/21 &emsp; Time: 9:07pm &emsp; By James Smith</li>
-                </ul>
+                <section id="CALLTOORDER">
+                    <h3>CALL TO ORDER</h3>
+                    <ul>
+                        <li>Call to Order &emsp; Date: 02/10/21 &emsp; Time: 9:07pm &emsp; By James Smith</li>
+                    </ul>
+                </section>
             </li>
             <li>
                 <h3>APPROVAL OF THE MINUTES FROM 25 SEPTEMBER 2021</h3>
@@ -60,7 +77,7 @@
                 </ul>
             </li>
             <li>
-                <h3>Agenda</h3>
+                <h3><a id="AGENDA">Agenda</a></h3>
                 <ol>
                     <li><h4>Team logistics</h4></li>
                     <li><h4>Role assignments</h4></li>
@@ -68,13 +85,13 @@
                 </ol>
             </li>
             <li>
-                <h3>VIDEO RECORDING OF MEETING</h3>
+                <h3><a id="VIDEORECORDING">VIDEO RECORDING OF MEETING</a></h3>
                 <video width="960" height="540" controls>
                     <source src="CoolVideo.mp4" type="video/mp4">
                 </video>
             </li>
             <li>
-                <h3>AUDIO RECORDING OF MEETING</h3>
+                <h3><a id="AUDIORECORDING">AUDIO RECORDING OF MEETING</a></h3>
                 <audio controls>
                     <source src="CoolAudio.mp3" type="audio/mp3"> 
                 </audio>
@@ -96,12 +113,57 @@
                 <li>The next meeting is scheduled for 9 October 2021 at 9pm.</li>
                 <li>Agenda for next meeting
                     <ol class="thing2">
-                        <li>Set project timeline.</li>
+                        <li>Set <span>project</span> timeline.</li>
                         <li>Set meeting time with TA/Tutors.</li>
                     </ol>
                 </li>
             </ol>
             </li>
         </ol>
+    </main>
+    <div class="hi">
+        <p>Hi. I used the div tag</p>
+    </div>
+    <form>
+        This is a form. 
+        <fieldset>
+            <p>Person 1</p>
+            Name: 
+            <input type="text" id="name" name="name"><br><br>
+            Opt-in: 
+            <input type="radio"> <br><br>
+            Biological Sex: <br>
+            Male:
+            <input type="checkbox"> 
+            Female: 
+            <input type="checkbox"><br><br>
+            Country of Origin: <br>
+            <label for="country">Choose your country of origin:</label>
+            <input list="countries" name="country" id="country">
+            <datalist id="countries">
+                <option value="China">
+                <option value="US">
+                <option value="UK">
+                <option value="France">
+                <option value="Russia">
+            </datalist><br><br>
+            Date:
+            <input type="date"><br><br>
+        </fieldset>
+        <fieldset>
+            <p>Person 2</p>
+            <select name="relation" id="relation">
+                <option value="mother">Mother</option>
+                <option value="father">Father</option>
+                <option value="son">Son</option>
+                <option value="daughter">Daughter</option>
+              </select>
+        </fieldset>
+    </form>
+    <br><br>
+    Enter your comments:
+    <textarea></textarea>
+    <h1>DO NOT PRESS THE BUTTON</h1>
+    <button type="button" onclick="alert('bruh')">No please!</button>
     </body>
 </html>
