@@ -13,7 +13,12 @@
             textarea {
                 background-color: hsl(162, 100%, 50%, 0.63);
             }
-
+            button:hover {
+                color:chartreuse; 
+            }
+            button:active {
+                color:crimson; 
+            }
         </style>
     </head>
     <body>
@@ -88,7 +93,7 @@
                 </ul>
             </li>
             <li>
-                <h3><a id="AGENDA">Agenda</a></h3>
+                <h3 style="margin: 50px 50px 50px 50px;"><a id="AGENDA">Agenda</a></h3>
                 <ol>
                     <li><h4>Team logistics</h4></li>
                     <li><h4>Role assignments</h4></li>
@@ -104,7 +109,7 @@
             <li>
                 <h3><a id="AUDIORECORDING">AUDIO RECORDING OF MEETING</a></h3>
                 <audio controls>
-                    <source src="CoolAudio.mp3" type="audio/mp3"> 
+                    <source src="CoolAudio.mp3" type="audio/mp3" media="screen and (max-device-width: 1080px)"> 
                 </audio>
             </li>
             <li>
@@ -112,7 +117,7 @@
                 <img src="Whiteboard.png" alt="Whiteboard Screenshot" width = 960>
             </li>
             <li>
-                <h3>ADJOURNMENT</h3>
+                <h3 style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;">ADJOURNMENT</h3>
                 <ul>
                     <li>Harrison moves to adjour. </li>
                     <li>John seconded. </li>
@@ -123,7 +128,7 @@
             <ol class="thing">
                 <li>The next meeting is scheduled for 9 October 2021 at 9pm.</li>
                 <li>Agenda for next meeting
-                    <ol class="thing2">
+                    <ol class="thing2" style="padding: 10px 10px 10px 10px;">
                         <li>Set <span>project</span> timeline.</li>
                         <li>Set meeting time with TA/Tutors.</li>
                     </ol>
