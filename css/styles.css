@@ -1,8 +1,37 @@
+@font-face {
+  font-family: 'Source Sans Pro', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+}
+
 body {
   /*WOW THIS IS A COMMENT*/ 
   line-height: 1.6;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   background-color:#EEE2DC;
+}
+
+.thing {
+  color:cornflowerblue; 
+}
+
+a {
+  color: blue;
+}
+
+a[href^="#"] {
+  background-color: pink;
+}
+
+#ATTENDANCE {
+  background-color: darkseagreen;
+}
+
+* {
+  color: grey;
+}
+
+summary:hover {
+  background-color: indianred;
 }
 
 hr {
@@ -14,12 +43,7 @@ hr {
   width: 6%;
 }
 
-h1 {
-  color: #AC3B61;
-  text-align: center;
-}
-
-h2 {
+h1, h2 {
   text-align: center;
   color: #8d0999; 
 }
@@ -35,6 +59,26 @@ p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+ol p {
+  color:gold; 
+}
+
+ul>li {
+  color:goldenrod; 
+}
+
+ul~ol {
+  color:lightblue; 
+}
+
+ul+ol {
+  color:lightsalmon; 
+}
+
+h1.section {
+  color:linen; 
 }
 
 ul {
